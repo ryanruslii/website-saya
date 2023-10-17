@@ -9,7 +9,7 @@ window.onscroll()=>{
 		let id=sec.getAttribute('id')
 		if(top>=offset && top< offset + height){
 			navLink.forEach(links=>{
-				links.classlis.remove('active')
+				links.classList.remove('active')
 				document.querySelector('header nav a[href*='+id+']').classList.add('active')
 			})
 		}
